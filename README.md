@@ -5,7 +5,7 @@ Simpler way to write TypeScript classes, interfaces and jsDocs
 # Example usage
 
 ```javascript
-const jsonToTS = require("@live2ride/jsontots");
+const { jsonToTS } = require("@live2ride/jsontots");
 
 const json = {
   id: "0001",

@@ -1,6 +1,6 @@
 {
   "name": "@live2ride/jsontots",
-  "version": "1.0.1",
+  "version": "1.0.9",
   "description": "Json object to TS class, interface and jsDoc",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/live2ride/jsontots/issues"
   },
-  "homepage": "https://github.com/live2ride/jsontots#readme"
+  "homepage": "https://github.com/live2ride/jsontots#readme",
+  "dependencies": {
+    "@live2ride/jsontots": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.186"
+  }
 }
