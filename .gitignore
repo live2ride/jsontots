@@ -1,0 +1,12 @@
+.env*
+.vscode
+_gsdata_
+/_gsdata_
+
+*-lock.json
+/node_modules
+*.log*
+/.pnp
+
+/build
+.DS_Store

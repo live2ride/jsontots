@@ -1,0 +1,23 @@
+{
+  "name": "@live2ride/jsontots",
+  "version": "1.0.1",
+  "description": "Json object to TS class, interface and jsDoc",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/live2ride/jsontots.git"
+  },
+  "keywords": [
+    "",
+    ""
+  ],
+  "author": "live2ride",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/live2ride/jsontots/issues"
+  },
+  "homepage": "https://github.com/live2ride/jsontots#readme"
+}
