@@ -146,7 +146,7 @@ export function jsonToTS(json: any, options?: IOptions): IjsonToTS {
   console.log(cleanObject.list);
   console.log("--------------------");
 
-  const name = getName("node");
+  const name = getName("yourClass");
 
   // let interfaceName = `I${name}`;
   let tmp = `${name} {\n`;
@@ -174,21 +174,14 @@ export function jsonToTS(json: any, options?: IOptions): IjsonToTS {
       elseStr = " || {}";
     }
     let constructorKey = key.replace(".", "?.");
-    classStr += `${classSpacesParams}this.${constructorKey} = _props.${constructorKey}${elseStr}\n`;
+    classStr += `${classSpacesParams}this.${constructorKey} = _props?.${constructorKey}${elseStr}\n`;
   }
   for (const [key, value] of Object.entries(cleanObject.obj)) {
     tmp = ` ${key}${allOptions.optional ? "?" : ""}: ${value};\n`;
   }
 
   classStr += `${classSpaces}}\n`;
-  // classStr += `\nconstructor(_props: any){
-  // let _fields = ${JSON.stringify(fields.keys)}
-  //   if(_props){
-  //     for(const f of _fields){
-  //       this[f  as keyof this] = _props[f]
-  //     }
-  //   }
-  // }`;
+
   tmp = `}\n`;
 
   classStr += tmp;
