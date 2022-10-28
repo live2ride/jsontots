@@ -31,6 +31,9 @@ function getName(name: string) {
 }
 function getType(value: any): string {
   const type = String(typeof value);
+  if (!value) {
+    return "any";
+  }
   if (["string", "number", "boolean"].includes(type)) {
     return type;
   } else {

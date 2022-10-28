@@ -89,4 +89,18 @@ class Yourclass {
          this.topping = _props?.topping
       }
 }
+
+```
+
+### And if you're using [@live2ride/db](https://github.com/live2ride/db) then you can do something like this:
+
+```javascript
+import DB from "@live2ride/db";
+const db = new DB();
+
+let qry = `select top 1 * from dbo.yourTable`; //or any select statement
+let res = await db.exec(qry, null, true); //get first row from the recordset
+
+let rv: any = jsonToTS(res); //returns TypeScript jsDoc comments, class and interface
+console.log(rv.jsDoc);
 ```
