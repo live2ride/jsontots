@@ -20,8 +20,8 @@ console.log(rv.jsDoc)
 console.log(rv.interface)
 console.log(rv.class)
  */
-function jsonToTS(json, overrideOptions) {
-    let options = Object.assign({ optional: false }, (overrideOptions || {}));
+function jsonToTS(json, options) {
+    let allOptions = Object.assign({ optional: false }, (options || {}));
     let nJson = {};
     for (const [key, value] of Object.entries(json)) {
         nJson = getType(nJson, key, typeof value);

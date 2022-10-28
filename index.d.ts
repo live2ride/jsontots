@@ -31,5 +31,5 @@ console.log(rv.jsDoc)
 console.log(rv.interface)
 console.log(rv.class)
  */
-export default function jsonToTS(json: any, overrideOptions: IOptions): IjsonToTS;
+export default function jsonToTS(json: any, options: IOptions): IjsonToTS;
 export {};
